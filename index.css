@@ -157,6 +157,33 @@ body {
   font-weight: 400;
 }
 
+.logo-area .sync-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--brand-teal);
+  background: rgba(20, 184, 166, 0.06);
+  border: 1px solid rgba(20, 184, 166, 0.18);
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: 8px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.logo-area .sync-time svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  animation: logo-spin 8s linear infinite;
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;

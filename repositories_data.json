@@ -5,11 +5,11 @@
     "full_name": "local/.tmp.driveupload",
     "description": "Local project folder",
     "visibility": "LOCAL_ONLY",
-    "created_at": "2026-06-25T22:20:16.270728Z",
-    "updated_at": "2026-06-25T22:20:16.270728Z",
+    "created_at": "2026-06-25T22:24:35.479763Z",
+    "updated_at": "2026-06-25T22:24:35.479763Z",
     "pushed_at": "",
     "language": "",
-    "size_kb": 103167,
+    "size_kb": 103193,
     "stars": 0,
     "forks": 0,
     "is_fork": false,
@@ -20,53 +20,18 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/.tmp.driveupload"
+      "~/Google_Antigravity/.tmp.driveupload"
     ],
     "local_sources": [
       "Google_Antigravity"
     ],
     "local_mtimes": [
-      1782397216.2707283
+      1782397475.479763
     ],
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/.tmp.driveupload",
-    "local_source": "Google_Antigravity"
-  },
-  {
-    "name": "Github_force_area",
-    "owner": "Local Only",
-    "full_name": "local/Github_force_area",
-    "description": "Local project folder",
-    "visibility": "LOCAL_ONLY",
-    "created_at": "2026-06-25T21:09:10.575080Z",
-    "updated_at": "2026-06-25T22:20:08.782852Z",
-    "pushed_at": "",
-    "language": "HTML",
-    "size_kb": 327,
-    "stars": 0,
-    "forks": 0,
-    "is_fork": false,
-    "parent_repo": "",
-    "url": "",
-    "homepage_url": "",
-    "connections": [],
-    "connection_count": 0,
-    "is_cloned": true,
-    "local_paths": [
-      "/Users/force/Google_Antigravity/Github_force_area"
-    ],
-    "local_sources": [
-      "Google_Antigravity"
-    ],
-    "local_mtimes": [
-      1782397208.782852
-    ],
-    "local_status": "Local Folder",
-    "is_out_of_sync": false,
-    "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/Github_force_area",
+    "local_path": "~/Google_Antigravity/.tmp.driveupload",
     "local_source": "Google_Antigravity"
   },
   {
@@ -90,7 +55,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/attn-class3-demo"
+      "~/Google_Antigravity/attn-class3-demo"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -101,7 +66,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/attn-class3-demo",
+    "local_path": "~/Google_Antigravity/attn-class3-demo",
     "local_source": "Google_Antigravity"
   },
   {
@@ -125,7 +90,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/attn-class"
+      "~/Google_Antigravity/attn-class"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -136,7 +101,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/attn-class",
+    "local_path": "~/Google_Antigravity/attn-class",
     "local_source": "Google_Antigravity"
   },
   {
@@ -160,7 +125,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/.tmp.drivedownload"
+      "~/Google_Antigravity/.tmp.drivedownload"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -171,7 +136,42 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/.tmp.drivedownload",
+    "local_path": "~/Google_Antigravity/.tmp.drivedownload",
+    "local_source": "Google_Antigravity"
+  },
+  {
+    "name": "repos",
+    "owner": "falo-taiwan",
+    "full_name": "falo-taiwan/repos",
+    "description": "",
+    "visibility": "PUBLIC",
+    "created_at": "2026-06-25T14:22:12Z",
+    "updated_at": "2026-06-25T14:22:38Z",
+    "pushed_at": "2026-06-25T14:22:15Z",
+    "language": "JavaScript",
+    "size_kb": 328,
+    "stars": 0,
+    "forks": 0,
+    "is_fork": false,
+    "parent_repo": "",
+    "url": "https://github.com/falo-taiwan/repos",
+    "homepage_url": "https://falo-taiwan.github.io/repos/",
+    "connections": [],
+    "connection_count": 0,
+    "is_cloned": true,
+    "local_paths": [
+      "~/Google_Antigravity/Github_force_area"
+    ],
+    "local_sources": [
+      "Google_Antigravity"
+    ],
+    "local_mtimes": [
+      1782397470.1767786
+    ],
+    "local_status": "Cloned",
+    "is_out_of_sync": false,
+    "sync_status": "synced",
+    "local_path": "~/Google_Antigravity/Github_force_area",
     "local_source": "Google_Antigravity"
   },
   {
@@ -253,7 +253,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/video_to_ppt"
+      "~/Google_Antigravity/video_to_ppt"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -264,7 +264,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/video_to_ppt",
+    "local_path": "~/Google_Antigravity/video_to_ppt",
     "local_source": "Google_Antigravity"
   },
   {
@@ -288,7 +288,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/wechat_video"
+      "~/AI-CodeX/wechat_video"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -299,7 +299,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/wechat_video",
+    "local_path": "~/AI-CodeX/wechat_video",
     "local_source": "AI-CodeX"
   },
   {
@@ -325,7 +325,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/OCR_Tools"
+      "~/Google_Antigravity/OCR_Tools"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -336,7 +336,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/Google_Antigravity/OCR_Tools",
+    "local_path": "~/Google_Antigravity/OCR_Tools",
     "local_source": "Google_Antigravity"
   },
   {
@@ -360,7 +360,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/ai_app"
+      "~/Google_Antigravity/ai_app"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -371,7 +371,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/Google_Antigravity/ai_app",
+    "local_path": "~/Google_Antigravity/ai_app",
     "local_source": "Google_Antigravity"
   },
   {
@@ -395,7 +395,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/AI_IM_center"
+      "~/Google_Antigravity/AI_IM_center"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -406,7 +406,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/AI_IM_center",
+    "local_path": "~/Google_Antigravity/AI_IM_center",
     "local_source": "Google_Antigravity"
   },
   {
@@ -430,7 +430,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/Line_IM_Agent"
+      "~/AI-CodeX/Line_IM_Agent"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -441,7 +441,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/Line_IM_Agent",
+    "local_path": "~/AI-CodeX/Line_IM_Agent",
     "local_source": "AI-CodeX"
   },
   {
@@ -465,7 +465,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/personal_ticket_management"
+      "~/Google_Antigravity/personal_ticket_management"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -476,7 +476,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": false,
     "sync_status": "synced",
-    "local_path": "/Users/force/Google_Antigravity/personal_ticket_management",
+    "local_path": "~/Google_Antigravity/personal_ticket_management",
     "local_source": "Google_Antigravity"
   },
   {
@@ -500,7 +500,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/firewall_ip_website"
+      "~/Google_Antigravity/firewall_ip_website"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -511,7 +511,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": false,
     "sync_status": "synced",
-    "local_path": "/Users/force/Google_Antigravity/firewall_ip_website",
+    "local_path": "~/Google_Antigravity/firewall_ip_website",
     "local_source": "Google_Antigravity"
   },
   {
@@ -535,7 +535,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/python_change"
+      "~/Google_Antigravity/python_change"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -546,7 +546,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/python_change",
+    "local_path": "~/Google_Antigravity/python_change",
     "local_source": "Google_Antigravity"
   },
   {
@@ -570,7 +570,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/ai-line-help"
+      "~/Google_Antigravity/ai-line-help"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -581,7 +581,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": false,
     "sync_status": "synced",
-    "local_path": "/Users/force/Google_Antigravity/ai-line-help",
+    "local_path": "~/Google_Antigravity/ai-line-help",
     "local_source": "Google_Antigravity"
   },
   {
@@ -605,7 +605,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/File_cleaner"
+      "~/Google_Antigravity/File_cleaner"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -616,7 +616,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/File_cleaner",
+    "local_path": "~/Google_Antigravity/File_cleaner",
     "local_source": "Google_Antigravity"
   },
   {
@@ -640,7 +640,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/horizon_class"
+      "~/Google_Antigravity/horizon_class"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -651,7 +651,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/horizon_class",
+    "local_path": "~/Google_Antigravity/horizon_class",
     "local_source": "Google_Antigravity"
   },
   {
@@ -706,7 +706,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/Prompt_hub"
+      "~/Google_Antigravity/Prompt_hub"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -717,7 +717,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/Prompt_hub",
+    "local_path": "~/Google_Antigravity/Prompt_hub",
     "local_source": "Google_Antigravity"
   },
   {
@@ -741,7 +741,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/Test001"
+      "~/AI-CodeX/Test001"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -752,7 +752,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/Test001",
+    "local_path": "~/AI-CodeX/Test001",
     "local_source": "AI-CodeX"
   },
   {
@@ -778,7 +778,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/skyline_class"
+      "~/Google_Antigravity/skyline_class"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -789,7 +789,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "remote_newer",
-    "local_path": "/Users/force/Google_Antigravity/skyline_class",
+    "local_path": "~/Google_Antigravity/skyline_class",
     "local_source": "Google_Antigravity"
   },
   {
@@ -813,7 +813,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/Github_Management"
+      "~/AI-CodeX/Github_Management"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -824,7 +824,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/Github_Management",
+    "local_path": "~/AI-CodeX/Github_Management",
     "local_source": "AI-CodeX"
   },
   {
@@ -943,8 +943,8 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/falo-prompt-manager",
-      "/Users/force/AI-CodeX/prompt-demo"
+      "~/AI-CodeX/falo-prompt-manager",
+      "~/AI-CodeX/prompt-demo"
     ],
     "local_sources": [
       "AI-CodeX",
@@ -957,7 +957,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/AI-CodeX/falo-prompt-manager",
+    "local_path": "~/AI-CodeX/falo-prompt-manager",
     "local_source": "AI-CodeX"
   },
   {
@@ -981,7 +981,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/Walker_ai"
+      "~/Google_Antigravity/Walker_ai"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -992,7 +992,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/Google_Antigravity/Walker_ai",
+    "local_path": "~/Google_Antigravity/Walker_ai",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1016,7 +1016,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/!!Github-Connect!!!"
+      "~/Google_Antigravity/!!Github-Connect!!!"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1027,7 +1027,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/!!Github-Connect!!!",
+    "local_path": "~/Google_Antigravity/!!Github-Connect!!!",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1051,7 +1051,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/Google_Antigravity"
+      "~/AI-CodeX/Google_Antigravity"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1062,7 +1062,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/Google_Antigravity",
+    "local_path": "~/AI-CodeX/Google_Antigravity",
     "local_source": "AI-CodeX"
   },
   {
@@ -1086,7 +1086,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/harizon-class"
+      "~/AI-CodeX/harizon-class"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1097,7 +1097,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/harizon-class",
+    "local_path": "~/AI-CodeX/harizon-class",
     "local_source": "AI-CodeX"
   },
   {
@@ -1121,7 +1121,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/antigravity_start"
+      "~/Google_Antigravity/antigravity_start"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1132,7 +1132,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/antigravity_start",
+    "local_path": "~/Google_Antigravity/antigravity_start",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1156,7 +1156,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/backup"
+      "~/Google_Antigravity/backup"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1167,7 +1167,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/backup",
+    "local_path": "~/Google_Antigravity/backup",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1222,7 +1222,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/falo-mini-station"
+      "~/Google_Antigravity/falo-mini-station"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1233,7 +1233,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/falo-mini-station",
+    "local_path": "~/Google_Antigravity/falo-mini-station",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1257,7 +1257,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/AI_Cosplay"
+      "~/Google_Antigravity/AI_Cosplay"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1268,7 +1268,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/AI_Cosplay",
+    "local_path": "~/Google_Antigravity/AI_Cosplay",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1294,7 +1294,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/AI_NotebookLM"
+      "~/Google_Antigravity/AI_NotebookLM"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1305,7 +1305,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/Google_Antigravity/AI_NotebookLM",
+    "local_path": "~/Google_Antigravity/AI_NotebookLM",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1329,7 +1329,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/video-analyze"
+      "~/Google_Antigravity/video-analyze"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1340,7 +1340,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": false,
     "sync_status": "synced",
-    "local_path": "/Users/force/Google_Antigravity/video-analyze",
+    "local_path": "~/Google_Antigravity/video-analyze",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1364,7 +1364,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/password"
+      "~/Google_Antigravity/password"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1375,7 +1375,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": false,
     "sync_status": "synced",
-    "local_path": "/Users/force/Google_Antigravity/password",
+    "local_path": "~/Google_Antigravity/password",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1457,7 +1457,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/falo-ai-resource-pool"
+      "~/AI-CodeX/falo-ai-resource-pool"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1468,7 +1468,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/falo-ai-resource-pool",
+    "local_path": "~/AI-CodeX/falo-ai-resource-pool",
     "local_source": "AI-CodeX"
   },
   {
@@ -1492,7 +1492,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/github-connect-research"
+      "~/AI-CodeX/github-connect-research"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1503,7 +1503,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/github-connect-research",
+    "local_path": "~/AI-CodeX/github-connect-research",
     "local_source": "AI-CodeX"
   },
   {
@@ -1527,7 +1527,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/falo-force-web"
+      "~/AI-CodeX/falo-force-web"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1538,7 +1538,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/falo-force-web",
+    "local_path": "~/AI-CodeX/falo-force-web",
     "local_source": "AI-CodeX"
   },
   {
@@ -1562,7 +1562,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/Falo_ModelBox"
+      "~/AI-CodeX/Falo_ModelBox"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1573,7 +1573,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/Falo_ModelBox",
+    "local_path": "~/AI-CodeX/Falo_ModelBox",
     "local_source": "AI-CodeX"
   },
   {
@@ -1597,7 +1597,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/attn-class3-book"
+      "~/AI-CodeX/attn-class3-book"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1608,37 +1608,8 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/attn-class3-book",
+    "local_path": "~/AI-CodeX/attn-class3-book",
     "local_source": "AI-CodeX"
-  },
-  {
-    "name": "skyline",
-    "owner": "falo-taiwan",
-    "full_name": "falo-taiwan/skyline",
-    "description": "",
-    "visibility": "PRIVATE",
-    "created_at": "2026-06-13T08:57:26Z",
-    "updated_at": "2026-06-13T09:01:02Z",
-    "pushed_at": "2026-06-13T09:00:59Z",
-    "language": "",
-    "size_kb": 1,
-    "stars": 0,
-    "forks": 0,
-    "is_fork": false,
-    "parent_repo": "",
-    "url": "https://github.com/falo-taiwan/skyline",
-    "homepage_url": "",
-    "connections": [],
-    "connection_count": 0,
-    "is_cloned": false,
-    "local_paths": [],
-    "local_sources": [],
-    "local_mtimes": [],
-    "local_status": "Remote Only",
-    "is_out_of_sync": false,
-    "sync_status": "remote_only",
-    "local_path": "",
-    "local_source": ""
   },
   {
     "name": "gemini_chrome",
@@ -1690,7 +1661,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/codex_ipas_school"
+      "~/AI-CodeX/codex_ipas_school"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -1701,7 +1672,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/codex_ipas_school",
+    "local_path": "~/AI-CodeX/codex_ipas_school",
     "local_source": "AI-CodeX"
   },
   {
@@ -1816,7 +1787,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/test-case"
+      "~/Google_Antigravity/test-case"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1827,7 +1798,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/Google_Antigravity/test-case",
+    "local_path": "~/Google_Antigravity/test-case",
     "local_source": "Google_Antigravity"
   },
   {
@@ -1913,7 +1884,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/Force_personal"
+      "~/Google_Antigravity/Force_personal"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -1924,7 +1895,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/Force_personal",
+    "local_path": "~/Google_Antigravity/Force_personal",
     "local_source": "Google_Antigravity"
   },
   {
@@ -2035,7 +2006,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/falo-mini-station-sxf-review"
+      "~/AI-CodeX/falo-mini-station-sxf-review"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2046,7 +2017,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/falo-mini-station-sxf-review",
+    "local_path": "~/AI-CodeX/falo-mini-station-sxf-review",
     "local_source": "AI-CodeX"
   },
   {
@@ -2070,7 +2041,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/falo-mini-station"
+      "~/AI-CodeX/falo-mini-station"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2081,7 +2052,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/falo-mini-station",
+    "local_path": "~/AI-CodeX/falo-mini-station",
     "local_source": "AI-CodeX"
   },
   {
@@ -2165,7 +2136,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/AI_Mesh_system"
+      "~/AI-CodeX/AI_Mesh_system"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2176,7 +2147,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/AI_Mesh_system",
+    "local_path": "~/AI-CodeX/AI_Mesh_system",
     "local_source": "AI-CodeX"
   },
   {
@@ -2200,7 +2171,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/gas_temp_data_center"
+      "~/AI-CodeX/gas_temp_data_center"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2211,7 +2182,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/gas_temp_data_center",
+    "local_path": "~/AI-CodeX/gas_temp_data_center",
     "local_source": "AI-CodeX"
   },
   {
@@ -2235,7 +2206,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/ngrok_manager"
+      "~/AI-CodeX/ngrok_manager"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2246,7 +2217,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/ngrok_manager",
+    "local_path": "~/AI-CodeX/ngrok_manager",
     "local_source": "AI-CodeX"
   },
   {
@@ -2270,7 +2241,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/NewsOps_QClaw_Stable"
+      "~/AI-CodeX/NewsOps_QClaw_Stable"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2281,7 +2252,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/NewsOps_QClaw_Stable",
+    "local_path": "~/AI-CodeX/NewsOps_QClaw_Stable",
     "local_source": "AI-CodeX"
   },
   {
@@ -2305,7 +2276,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/Agent_news"
+      "~/AI-CodeX/Agent_news"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2316,7 +2287,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/Agent_news",
+    "local_path": "~/AI-CodeX/Agent_news",
     "local_source": "AI-CodeX"
   },
   {
@@ -2340,7 +2311,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/AI_WWW"
+      "~/AI-CodeX/AI_WWW"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2351,7 +2322,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/AI_WWW",
+    "local_path": "~/AI-CodeX/AI_WWW",
     "local_source": "AI-CodeX"
   },
   {
@@ -2375,7 +2346,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/AI-ERP"
+      "~/AI-CodeX/AI-ERP"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2386,7 +2357,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/AI-ERP",
+    "local_path": "~/AI-CodeX/AI-ERP",
     "local_source": "AI-CodeX"
   },
   {
@@ -2410,7 +2381,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/Research"
+      "~/AI-CodeX/Research"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2421,7 +2392,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/Research",
+    "local_path": "~/AI-CodeX/Research",
     "local_source": "AI-CodeX"
   },
   {
@@ -2445,7 +2416,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/PECB_42001"
+      "~/AI-CodeX/PECB_42001"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2456,7 +2427,7 @@
     "local_status": "Local Git",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/PECB_42001",
+    "local_path": "~/AI-CodeX/PECB_42001",
     "local_source": "AI-CodeX"
   },
   {
@@ -2480,7 +2451,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/kerwin-notebooklm"
+      "~/Google_Antigravity/kerwin-notebooklm"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -2491,7 +2462,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/kerwin-notebooklm",
+    "local_path": "~/Google_Antigravity/kerwin-notebooklm",
     "local_source": "Google_Antigravity"
   },
   {
@@ -2515,7 +2486,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/MCP_Project"
+      "~/AI-CodeX/MCP_Project"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2526,7 +2497,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/AI-CodeX/MCP_Project",
+    "local_path": "~/AI-CodeX/MCP_Project",
     "local_source": "AI-CodeX"
   },
   {
@@ -2552,7 +2523,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/ai-ocr-demo"
+      "~/Google_Antigravity/ai-ocr-demo"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -2563,7 +2534,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": false,
     "sync_status": "synced",
-    "local_path": "/Users/force/Google_Antigravity/ai-ocr-demo",
+    "local_path": "~/Google_Antigravity/ai-ocr-demo",
     "local_source": "Google_Antigravity"
   },
   {
@@ -2620,7 +2591,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/fly-window"
+      "~/AI-CodeX/fly-window"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2631,7 +2602,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/AI-CodeX/fly-window",
+    "local_path": "~/AI-CodeX/fly-window",
     "local_source": "AI-CodeX"
   },
   {
@@ -2655,8 +2626,8 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/ai_ocr",
-      "/Users/force/AI-CodeX/ai-ocr"
+      "~/Google_Antigravity/ai_ocr",
+      "~/AI-CodeX/ai-ocr"
     ],
     "local_sources": [
       "Google_Antigravity",
@@ -2669,7 +2640,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/Google_Antigravity/ai_ocr",
+    "local_path": "~/Google_Antigravity/ai_ocr",
     "local_source": "Google_Antigravity"
   },
   {
@@ -2722,7 +2693,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/Horizon_AI_Bidding_Project"
+      "~/Google_Antigravity/Horizon_AI_Bidding_Project"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -2733,7 +2704,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/Horizon_AI_Bidding_Project",
+    "local_path": "~/Google_Antigravity/Horizon_AI_Bidding_Project",
     "local_source": "Google_Antigravity"
   },
   {
@@ -2757,7 +2728,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/taat-audit"
+      "~/AI-CodeX/taat-audit"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2768,7 +2739,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/AI-CodeX/taat-audit",
+    "local_path": "~/AI-CodeX/taat-audit",
     "local_source": "AI-CodeX"
   },
   {
@@ -2856,7 +2827,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/AI_Teach_Classroom"
+      "~/AI-CodeX/AI_Teach_Classroom"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -2867,7 +2838,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/AI-CodeX/AI_Teach_Classroom",
+    "local_path": "~/AI-CodeX/AI_Teach_Classroom",
     "local_source": "AI-CodeX"
   },
   {
@@ -3011,7 +2982,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/aiap"
+      "~/Google_Antigravity/aiap"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -3022,7 +2993,7 @@
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
-    "local_path": "/Users/force/Google_Antigravity/aiap",
+    "local_path": "~/Google_Antigravity/aiap",
     "local_source": "Google_Antigravity"
   },
   {
@@ -3048,7 +3019,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/ai-notebooklm"
+      "~/AI-CodeX/ai-notebooklm"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -3059,7 +3030,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/AI-CodeX/ai-notebooklm",
+    "local_path": "~/AI-CodeX/ai-notebooklm",
     "local_source": "AI-CodeX"
   },
   {
@@ -3114,7 +3085,7 @@
     "connection_count": 1,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/AI-CodeX/ocr_study"
+      "~/AI-CodeX/ocr_study"
     ],
     "local_sources": [
       "AI-CodeX"
@@ -3125,7 +3096,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/AI-CodeX/ocr_study",
+    "local_path": "~/AI-CodeX/ocr_study",
     "local_source": "AI-CodeX"
   },
   {
@@ -3795,7 +3766,7 @@
     "connection_count": 0,
     "is_cloned": true,
     "local_paths": [
-      "/Users/force/Google_Antigravity/Faloer"
+      "~/Google_Antigravity/Faloer"
     ],
     "local_sources": [
       "Google_Antigravity"
@@ -3806,7 +3777,7 @@
     "local_status": "Cloned",
     "is_out_of_sync": true,
     "sync_status": "local_newer",
-    "local_path": "/Users/force/Google_Antigravity/Faloer",
+    "local_path": "~/Google_Antigravity/Faloer",
     "local_source": "Google_Antigravity"
   },
   {
