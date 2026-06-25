@@ -572,6 +572,20 @@
               </span>`;
           }
           
+          // Local source badge (A / C / A, C)
+          let sourceBadge = '';
+          if (repo.local_sources && repo.local_sources.length > 0) {
+            const sourcesText = repo.local_sources.join(', ');
+            const sourcesTitle = repo.local_sources.map(s => s === 'A' ? 'Antigravity' : (s === 'C' ? 'Codex' : s)).join(' & ');
+            sourceBadge = `
+              <span class="status-badge status-source" title="本地工作區來源：${sourcesTitle}">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-19.5 0A2.25 2.25 0 004.5 15h15a2.25 2.25 0 002.25-2.25m-19.5 0v.158c0 .385.021.77.061 1.15l1.1 11.003c.199 1.98 1.867 3.497 3.86 3.497h10.458c1.993 0 3.662-1.517 3.86-3.497l1.1-11.002a7.48 7.48 0 00.062-1.15V12.75" />
+                </svg>
+                本地: ${sourcesText}
+              </span>`;
+          }
+          
           // Out of sync warning badges
           let syncBadge = '';
           if (repo.is_out_of_sync) {
@@ -668,6 +682,7 @@
                   ${ownerBadge}
                   ${visibilityBadge}
                   ${statusBadge}
+                  ${sourceBadge}
                   ${syncBadge}
                 </div>
                 <h3 class="repo-title" title="${repo.name}">${repo.name}</h3>

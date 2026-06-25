@@ -807,6 +807,12 @@ body {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+.status-source {
+  color: hsl(195, 90%, 65%);
+  background: rgba(14, 165, 233, 0.08);
+  border-color: rgba(14, 165, 233, 0.2);
+}
+
 /* Sync Badges indicating local-newer / remote-newer out of sync states */
 .sync-badge {
   display: inline-flex;

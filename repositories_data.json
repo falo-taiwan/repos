@@ -5,8 +5,8 @@
     "full_name": "local/.tmp.driveupload",
     "description": "Local project folder",
     "visibility": "LOCAL_ONLY",
-    "created_at": "2026-06-25T22:24:35.479763Z",
-    "updated_at": "2026-06-25T22:24:35.479763Z",
+    "created_at": "2026-06-25T22:25:40.675127Z",
+    "updated_at": "2026-06-25T22:25:40.675127Z",
     "pushed_at": "",
     "language": "",
     "size_kb": 103193,
@@ -23,16 +23,16 @@
       "~/Google_Antigravity/.tmp.driveupload"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
-      1782397475.479763
+      1782397540.6751273
     ],
     "local_status": "Local Folder",
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/.tmp.driveupload",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "attn-class3-demo",
@@ -58,7 +58,7 @@
       "~/Google_Antigravity/attn-class3-demo"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782396597.2306345
@@ -67,7 +67,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/attn-class3-demo",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "attn-class",
@@ -93,7 +93,7 @@
       "~/Google_Antigravity/attn-class"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782396596.8815355
@@ -102,7 +102,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/attn-class",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": ".tmp.drivedownload",
@@ -128,7 +128,7 @@
       "~/Google_Antigravity/.tmp.drivedownload"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782393230.874479
@@ -137,7 +137,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/.tmp.drivedownload",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "repos",
@@ -146,10 +146,10 @@
     "description": "",
     "visibility": "PUBLIC",
     "created_at": "2026-06-25T14:22:12Z",
-    "updated_at": "2026-06-25T14:22:38Z",
-    "pushed_at": "2026-06-25T14:22:15Z",
+    "updated_at": "2026-06-25T14:25:30Z",
+    "pushed_at": "2026-06-25T14:24:45Z",
     "language": "JavaScript",
-    "size_kb": 328,
+    "size_kb": 324,
     "stars": 0,
     "forks": 0,
     "is_fork": false,
@@ -163,16 +163,16 @@
       "~/Google_Antigravity/Github_force_area"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
-      1782397470.1767786
+      1782397534.6847913
     ],
     "local_status": "Cloned",
     "is_out_of_sync": false,
     "sync_status": "synced",
     "local_path": "~/Google_Antigravity/Github_force_area",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "falo-taiwan.github.io",
@@ -256,7 +256,7 @@
       "~/Google_Antigravity/video_to_ppt"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782354917.7052755
@@ -265,7 +265,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/video_to_ppt",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "wechat_video",
@@ -291,7 +291,7 @@
       "~/AI-CodeX/wechat_video"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1782354871.285346
@@ -300,7 +300,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/wechat_video",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ipas-aiap",
@@ -328,7 +328,7 @@
       "~/Google_Antigravity/OCR_Tools"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782369008.3155186
@@ -337,7 +337,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/Google_Antigravity/OCR_Tools",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "tw-ai-grant",
@@ -363,7 +363,7 @@
       "~/Google_Antigravity/ai_app"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782393282.7175345
@@ -372,7 +372,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/Google_Antigravity/ai_app",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "AI_IM_center",
@@ -398,7 +398,7 @@
       "~/Google_Antigravity/AI_IM_center"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782267461.575881
@@ -407,7 +407,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/AI_IM_center",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "Line_IM_Agent",
@@ -433,7 +433,7 @@
       "~/AI-CodeX/Line_IM_Agent"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1782144571.8362198
@@ -442,7 +442,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/Line_IM_Agent",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ticket-demo",
@@ -468,7 +468,7 @@
       "~/Google_Antigravity/personal_ticket_management"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782142011.8382502
@@ -477,7 +477,7 @@
     "is_out_of_sync": false,
     "sync_status": "synced",
     "local_path": "~/Google_Antigravity/personal_ticket_management",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "firewall-test",
@@ -503,7 +503,7 @@
       "~/Google_Antigravity/firewall_ip_website"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782116467.8022509
@@ -512,7 +512,7 @@
     "is_out_of_sync": false,
     "sync_status": "synced",
     "local_path": "~/Google_Antigravity/firewall_ip_website",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "python_change",
@@ -538,7 +538,7 @@
       "~/Google_Antigravity/python_change"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782034516.1448996
@@ -547,7 +547,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/python_change",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "ai-line-help",
@@ -573,7 +573,7 @@
       "~/Google_Antigravity/ai-line-help"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781970567.2387626
@@ -582,7 +582,7 @@
     "is_out_of_sync": false,
     "sync_status": "synced",
     "local_path": "~/Google_Antigravity/ai-line-help",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "File_cleaner",
@@ -608,7 +608,7 @@
       "~/Google_Antigravity/File_cleaner"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781776041.070957
@@ -617,7 +617,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/File_cleaner",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "horizon_class",
@@ -643,7 +643,7 @@
       "~/Google_Antigravity/horizon_class"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781663426.5628178
@@ -652,7 +652,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/horizon_class",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "skyline-class",
@@ -709,7 +709,7 @@
       "~/Google_Antigravity/Prompt_hub"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781626766.7639875
@@ -718,7 +718,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/Prompt_hub",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "Test001",
@@ -744,7 +744,7 @@
       "~/AI-CodeX/Test001"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781605542.0420601
@@ -753,7 +753,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/Test001",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "skyline-class",
@@ -781,7 +781,7 @@
       "~/Google_Antigravity/skyline_class"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781631124.986104
@@ -790,7 +790,7 @@
     "is_out_of_sync": true,
     "sync_status": "remote_newer",
     "local_path": "~/Google_Antigravity/skyline_class",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "Github_Management",
@@ -816,7 +816,7 @@
       "~/AI-CodeX/Github_Management"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781603369.2384856
@@ -825,7 +825,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/Github_Management",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ai-parser-demo1",
@@ -947,8 +947,8 @@
       "~/AI-CodeX/prompt-demo"
     ],
     "local_sources": [
-      "AI-CodeX",
-      "AI-CodeX"
+      "C",
+      "C"
     ],
     "local_mtimes": [
       1781622158.83842,
@@ -958,7 +958,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/AI-CodeX/falo-prompt-manager",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ai-finance-demo1",
@@ -984,7 +984,7 @@
       "~/Google_Antigravity/Walker_ai"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1782181361.617627
@@ -993,7 +993,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/Google_Antigravity/Walker_ai",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "!!Github-Connect!!!",
@@ -1019,7 +1019,7 @@
       "~/Google_Antigravity/!!Github-Connect!!!"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781536909.347746
@@ -1028,7 +1028,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/!!Github-Connect!!!",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "Google_Antigravity",
@@ -1054,7 +1054,7 @@
       "~/AI-CodeX/Google_Antigravity"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781535198.7207956
@@ -1063,7 +1063,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/Google_Antigravity",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "harizon-class",
@@ -1089,7 +1089,7 @@
       "~/AI-CodeX/harizon-class"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781529252.8802707
@@ -1098,7 +1098,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/harizon-class",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "antigravity_start",
@@ -1124,7 +1124,7 @@
       "~/Google_Antigravity/antigravity_start"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781504866.1163
@@ -1133,7 +1133,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/antigravity_start",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "backup",
@@ -1159,7 +1159,7 @@
       "~/Google_Antigravity/backup"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781504811.1638484
@@ -1168,7 +1168,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/backup",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "ai-ocr-demo",
@@ -1225,7 +1225,7 @@
       "~/Google_Antigravity/falo-mini-station"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781497795.6296265
@@ -1234,7 +1234,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/falo-mini-station",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "AI_Cosplay",
@@ -1260,7 +1260,7 @@
       "~/Google_Antigravity/AI_Cosplay"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781494005.0534048
@@ -1269,7 +1269,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/AI_Cosplay",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "ai-notebooklm",
@@ -1297,7 +1297,7 @@
       "~/Google_Antigravity/AI_NotebookLM"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781851379.038512
@@ -1306,7 +1306,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/Google_Antigravity/AI_NotebookLM",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "video-analysis-optimization",
@@ -1332,7 +1332,7 @@
       "~/Google_Antigravity/video-analyze"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781509707.7510576
@@ -1341,7 +1341,7 @@
     "is_out_of_sync": false,
     "sync_status": "synced",
     "local_path": "~/Google_Antigravity/video-analyze",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "content-cipher-lab",
@@ -1367,7 +1367,7 @@
       "~/Google_Antigravity/password"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781496062.6920614
@@ -1376,7 +1376,7 @@
     "is_out_of_sync": false,
     "sync_status": "synced",
     "local_path": "~/Google_Antigravity/password",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "good-repo-hung-yi-lee-skill",
@@ -1460,7 +1460,7 @@
       "~/AI-CodeX/falo-ai-resource-pool"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781353210.941022
@@ -1469,7 +1469,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/falo-ai-resource-pool",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "github-connect-research",
@@ -1495,7 +1495,7 @@
       "~/AI-CodeX/github-connect-research"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781353205.9298806
@@ -1504,7 +1504,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/github-connect-research",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "falo-force-web",
@@ -1530,7 +1530,7 @@
       "~/AI-CodeX/falo-force-web"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781316235.590297
@@ -1539,7 +1539,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/falo-force-web",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "Falo_ModelBox",
@@ -1565,7 +1565,7 @@
       "~/AI-CodeX/Falo_ModelBox"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781316235.5872774
@@ -1574,7 +1574,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/Falo_ModelBox",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "attn-class3-book",
@@ -1600,7 +1600,7 @@
       "~/AI-CodeX/attn-class3-book"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781316093.112044
@@ -1609,7 +1609,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/attn-class3-book",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "gemini_chrome",
@@ -1664,7 +1664,7 @@
       "~/AI-CodeX/codex_ipas_school"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781285631.8571925
@@ -1673,7 +1673,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/codex_ipas_school",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "erp-demo",
@@ -1790,7 +1790,7 @@
       "~/Google_Antigravity/test-case"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781316278.554008
@@ -1799,7 +1799,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/Google_Antigravity/test-case",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "gas-demo",
@@ -1887,7 +1887,7 @@
       "~/Google_Antigravity/Force_personal"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1780898793.2577662
@@ -1896,7 +1896,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/Force_personal",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "computer-use",
@@ -2009,7 +2009,7 @@
       "~/AI-CodeX/falo-mini-station-sxf-review"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780745326.8138506
@@ -2018,7 +2018,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/falo-mini-station-sxf-review",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "falo-mini-station",
@@ -2044,7 +2044,7 @@
       "~/AI-CodeX/falo-mini-station"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780744298.1365273
@@ -2053,7 +2053,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/falo-mini-station",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ipas-aiap",
@@ -2139,7 +2139,7 @@
       "~/AI-CodeX/AI_Mesh_system"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407592.5802586
@@ -2148,7 +2148,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/AI_Mesh_system",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "gas_temp_data_center",
@@ -2174,7 +2174,7 @@
       "~/AI-CodeX/gas_temp_data_center"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407592.5779204
@@ -2183,7 +2183,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/gas_temp_data_center",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ngrok_manager",
@@ -2209,7 +2209,7 @@
       "~/AI-CodeX/ngrok_manager"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407592.577069
@@ -2218,7 +2218,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/ngrok_manager",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "NewsOps_QClaw_Stable",
@@ -2244,7 +2244,7 @@
       "~/AI-CodeX/NewsOps_QClaw_Stable"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.5531218
@@ -2253,7 +2253,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/NewsOps_QClaw_Stable",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "Agent_news",
@@ -2279,7 +2279,7 @@
       "~/AI-CodeX/Agent_news"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.5475974
@@ -2288,7 +2288,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/Agent_news",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "AI_WWW",
@@ -2314,7 +2314,7 @@
       "~/AI-CodeX/AI_WWW"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.5268724
@@ -2323,7 +2323,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/AI_WWW",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "AI-ERP",
@@ -2349,7 +2349,7 @@
       "~/AI-CodeX/AI-ERP"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.5020914
@@ -2358,7 +2358,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/AI-ERP",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "Research",
@@ -2384,7 +2384,7 @@
       "~/AI-CodeX/Research"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.4836087
@@ -2393,7 +2393,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/Research",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "PECB_42001",
@@ -2419,7 +2419,7 @@
       "~/AI-CodeX/PECB_42001"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.4593647
@@ -2428,7 +2428,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/PECB_42001",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "kerwin-notebooklm",
@@ -2454,7 +2454,7 @@
       "~/Google_Antigravity/kerwin-notebooklm"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1780407587.4203317
@@ -2463,7 +2463,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/kerwin-notebooklm",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "MCP_Project",
@@ -2489,7 +2489,7 @@
       "~/AI-CodeX/MCP_Project"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.4062047
@@ -2498,7 +2498,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/AI-CodeX/MCP_Project",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ai-ocr-demo",
@@ -2526,7 +2526,7 @@
       "~/Google_Antigravity/ai-ocr-demo"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1780411464.1478624
@@ -2535,7 +2535,7 @@
     "is_out_of_sync": false,
     "sync_status": "synced",
     "local_path": "~/Google_Antigravity/ai-ocr-demo",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "fly-window",
@@ -2594,7 +2594,7 @@
       "~/AI-CodeX/fly-window"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781316093.111127
@@ -2603,7 +2603,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/AI-CodeX/fly-window",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ai-ocr",
@@ -2630,8 +2630,8 @@
       "~/AI-CodeX/ai-ocr"
     ],
     "local_sources": [
-      "Google_Antigravity",
-      "AI-CodeX"
+      "A",
+      "C"
     ],
     "local_mtimes": [
       1780407587.421256,
@@ -2641,7 +2641,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/Google_Antigravity/ai_ocr",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "demo-scroll-restore-ux",
@@ -2696,7 +2696,7 @@
       "~/Google_Antigravity/Horizon_AI_Bidding_Project"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1780142678.5042856
@@ -2705,7 +2705,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/Horizon_AI_Bidding_Project",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "ai-audit-01",
@@ -2731,7 +2731,7 @@
       "~/AI-CodeX/taat-audit"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.5160587
@@ -2740,7 +2740,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/AI-CodeX/taat-audit",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ai-ocr-vision-benchmark",
@@ -2830,7 +2830,7 @@
       "~/AI-CodeX/AI_Teach_Classroom"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1781621935.7700293
@@ -2839,7 +2839,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/AI-CodeX/AI_Teach_Classroom",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ai-ocr-classroom",
@@ -2985,7 +2985,7 @@
       "~/Google_Antigravity/aiap"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1779285298.456535
@@ -2994,7 +2994,7 @@
     "is_out_of_sync": false,
     "sync_status": "local_only",
     "local_path": "~/Google_Antigravity/aiap",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "ai-notebooklm",
@@ -3022,7 +3022,7 @@
       "~/AI-CodeX/ai-notebooklm"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.514392
@@ -3031,7 +3031,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/AI-CodeX/ai-notebooklm",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "42001-dictionary",
@@ -3088,7 +3088,7 @@
       "~/AI-CodeX/ocr_study"
     ],
     "local_sources": [
-      "AI-CodeX"
+      "C"
     ],
     "local_mtimes": [
       1780407587.561392
@@ -3097,7 +3097,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/AI-CodeX/ocr_study",
-    "local_source": "AI-CodeX"
+    "local_source": "C"
   },
   {
     "name": "ai-mesh-pic",
@@ -3769,7 +3769,7 @@
       "~/Google_Antigravity/Faloer"
     ],
     "local_sources": [
-      "Google_Antigravity"
+      "A"
     ],
     "local_mtimes": [
       1781257876.8479846
@@ -3778,7 +3778,7 @@
     "is_out_of_sync": true,
     "sync_status": "local_newer",
     "local_path": "~/Google_Antigravity/Faloer",
-    "local_source": "Google_Antigravity"
+    "local_source": "A"
   },
   {
     "name": "survey",
