@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FALO & FORCE 儲存庫生態系導覽 (本地-雲端雙檢視)</title>
+  <meta name="description" content="互動式 GitHub 儲存庫與本地工作區關係對照面板 - 涵蓋 force-taiwan, falo-chinese, falo-taiwan & 本地專案">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <div class="app-container">
+    <!-- Header Section -->
+    <header class="app-header">
+      <div class="header-content">
+        <div class="logo-area">
+          <span class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+            </svg>
+          </span>
+          <div>
+            <h1>FALO & FORCE 儲存庫生態系</h1>
+            <p class="subtitle">本地-雲端工作區地圖：支援 GitHub 儲存庫與本地未上傳資料夾之雙向對照</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button id="btn-export-csv" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            匯出 CSV 報表
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Statistics Overview Cards (Locally-Cloud Sync focus) -->
+    <section class="stats-grid" aria-label="數據總覽">
+      <!-- Card 1: Total Items -->
+      <div class="stat-card">
+        <div class="stat-icon icon-blue">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.008 1.24l.885 1.77a2.25 2.25 0 002.007 1.24h1.98a2.25 2.25 0 002.007-1.24l.885-1.77a2.25 2.25 0 012.007-1.24h3.86m-18 0h18m-18 0l-1.125-11.25A2.25 2.25 0 012.25 2.25h19.5a2.25 2.25 0 012.25 2.25L21.75 13.5m-18 0l-1.125 11.25A2.25 2.25 0 003 21.75h18a2.25 2.25 0 002.25-2.25L21.75 13.5" />
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-value" id="stat-total-repos">-</span>
+          <span class="stat-label">專案與儲存庫總數</span>
+        </div>
+      </div>
+      
+      <!-- Card 2: Cloned -->
+      <div class="stat-card">
+        <div class="stat-icon icon-purple">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.008 1.24l.885 1.77a2.25 2.25 0 002.007 1.24h1.98a2.25 2.25 0 002.007-1.24l.885-1.77a2.25 2.25 0 012.007-1.24h3.86m-18 0h18" />
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-value" id="stat-cloned-repos">-</span>
+          <span class="stat-label">已下載到本地 (Cloned)</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Local Only -->
+      <div class="stat-card">
+        <div class="stat-icon icon-teal">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v6m3-3H9m4.06-7.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-value" id="stat-local-only-repos">-</span>
+          <span class="stat-label">僅存在於本地 (未上傳)</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Remote Only -->
+      <div class="stat-card">
+        <div class="stat-icon icon-amber">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5h10.5a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0017.25 4.5H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z" />
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-value" id="stat-remote-only-repos">-</span>
+          <span class="stat-label">僅存在於雲端 (GitHub)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area with Filters & Grid -->
+    <main class="main-layout">
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <div class="sidebar-card">
+          <div class="sidebar-header">
+            <h3>搜尋與篩選</h3>
+            <button id="btn-reset-filters" class="btn-text">重設</button>
+          </div>
+
+          <!-- Search -->
+          <div class="filter-group">
+            <label for="search-input" class="filter-label">關鍵字搜尋</label>
+            <div class="search-input-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="search-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+              <input type="text" id="search-input" placeholder="輸入名稱、描述、語言、路徑..." autocomplete="off">
+            </div>
+          </div>
+
+          <!-- Workspace Status Filter -->
+          <div class="filter-group">
+            <label for="select-local-status" class="filter-label">儲存庫/本地狀態</label>
+            <select id="select-local-status" class="custom-select">
+              <option value="all">全部狀態</option>
+              <option value="cloned">已下載到本地 (Cloned)</option>
+              <option value="remote_only">僅遠端 (GitHub Only)</option>
+              <option value="local_only">僅本地專案 (未上傳)</option>
+              <option value="local_git">僅本地 - Git 專案</option>
+              <option value="local_folder">僅本地 - 一般資料夾</option>
+              <option value="external_cloned">外部 Git 儲存庫</option>
+            </select>
+          </div>
+
+          <!-- Account/Owner Filter (Populated dynamically) -->
+          <div class="filter-group">
+            <span class="filter-label">GitHub 帳號 / 擁有者</span>
+            <div class="checkbox-group" id="account-filters">
+              <!-- Populated dynamically by script -->
+              <div class="loading-state-mini">載入帳號列表中...</div>
+            </div>
+          </div>
+
+          <!-- Visibility Filter -->
+          <div class="filter-group">
+            <label for="select-visibility" class="filter-label">可見度權限</label>
+            <select id="select-visibility" class="custom-select">
+              <option value="all">全部可見度</option>
+              <option value="public">公開 (Public)</option>
+              <option value="private">私有 (Private)</option>
+              <option value="local_only">僅本地 (Local Only)</option>
+            </select>
+          </div>
+
+          <!-- Language Filter -->
+          <div class="filter-group">
+            <label for="select-language" class="filter-label">主要程式語言</label>
+            <select id="select-language" class="custom-select">
+              <option value="all">全部語言</option>
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <!-- Repository Type Filter -->
+          <div class="filter-group">
+            <label for="select-type" class="filter-label">儲存庫原創性</label>
+            <select id="select-type" class="custom-select">
+              <option value="all">全部類型</option>
+              <option value="original">原創專案</option>
+              <option value="fork">Fork 分支</option>
+            </select>
+          </div>
+
+          <!-- Connections Filter -->
+          <div class="filter-group">
+            <label class="toggle-label">
+              <input type="checkbox" id="toggle-connections">
+              <span class="custom-toggle"></span>
+              僅顯示跨帳號關聯儲存庫
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Content Panel -->
+      <section class="content-panel" aria-label="儲存庫列表">
+        <!-- Control Bar (Sorting & View mode) -->
+        <div class="control-bar">
+          <div class="results-count">
+            共找到 <span id="filtered-count">0</span> / <span id="total-count">0</span> 個項目
+          </div>
+          
+          <div class="sort-wrapper">
+            <label for="select-sort" class="sort-label">排序方式</label>
+            <select id="select-sort" class="custom-select sort-select">
+              <option value="updated_at" selected>最後更新/修改時間 (預設)</option>
+              <option value="pushed_at">最後雲端推送時間</option>
+              <option value="created_at">建立日期</option>
+              <option value="name_asc">專案名稱 (A-Z)</option>
+              <option value="name_desc">專案名稱 (Z-A)</option>
+              <option value="size">專案大小</option>
+              <option value="stars">GitHub 星數</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Repository Grid -->
+        <div class="repo-grid" id="repo-grid">
+          <div class="loading-state">
+            <div class="spinner"></div>
+            <p>載入專案與儲存庫資料中...</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>© 2026 FALO & FORCE Ecosystem. 本地目錄對照路徑：/Users/force/Google_Antigravity</p>
+    </footer>
+  </div>
+
+  <!-- Detail Drawer Panel -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="drawer" id="repo-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <button class="drawer-close" id="btn-close-drawer" aria-label="關閉詳細資訊">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    
+    <div class="drawer-content" id="drawer-body">
+      <!-- Populated dynamically -->
+    </div>
+  </div>
+
+  <!-- Load repositories data first -->
+  <script src="data.js"></script>
+  <!-- Load main logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let allRepos = [];
+      
+      // Load data
+      if (window.REPOS_DATA) {
+        allRepos = window.REPOS_DATA;
+        initApp();
+      } else {
+        // Fallback fetch
+        fetch('./repositories_data.json')
+          .then(res => res.json())
+          .then(data => {
+            allRepos = data;
+            initApp();
+          })
+          .catch(err => {
+            console.error("Failed to load repo data:", err);
+            document.getElementById('repo-grid').innerHTML = `
+              <div class="error-state">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="error-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                </svg>
+                <p>資料載入失敗，請確保工作區下有 repositories_data.json 或 data.js</p>
+              </div>
+            `;
+          });
+      }
+
+      function initApp() {
+        // Compute Statistics
+        computeStats();
+        // Populate dynamically the accounts filter
+        populateAccounts();
+        // Populate Languages filter
+        populateLanguages();
+        // Bind UI Events
+        bindEvents();
+        // Initial Draw
+        filterAndRender();
+      }
+
+      // Compute stats for overview section
+      function computeStats() {
+        document.getElementById('stat-total-repos').textContent = allRepos.length;
+        
+        const clonedCount = allRepos.filter(r => r.local_status === 'Cloned' || r.local_status === 'External Cloned').length;
+        document.getElementById('stat-cloned-repos').textContent = clonedCount;
+        
+        const localOnlyCount = allRepos.filter(r => r.local_status === 'Local Git' || r.local_status === 'Local Folder').length;
+        document.getElementById('stat-local-only-repos').textContent = localOnlyCount;
+        
+        const remoteOnlyCount = allRepos.filter(r => r.local_status === 'Remote Only').length;
+        document.getElementById('stat-remote-only-repos').textContent = remoteOnlyCount;
+      }
+
+      // Populate account checkboxes dynamically based on dataset owners
+      function populateAccounts() {
+        // Find all unique owners and count them
+        const ownerCounts = {};
+        allRepos.forEach(r => {
+          const owner = r.owner || "Unknown";
+          ownerCounts[owner] = (ownerCounts[owner] || 0) + 1;
+        });
+
+        // Sort owners: Put key owners first, then local only, then others
+        const sortedOwners = Object.keys(ownerCounts).sort((a, b) => {
+          const priority = {
+            "falo-taiwan": 1,
+            "falo-chinese": 2,
+            "force-taiwan": 3,
+            "Local Only": 4
+          };
+          const pa = priority[a] || 99;
+          const pb = priority[b] || 99;
+          if (pa !== pb) return pa - pb;
+          return a.localeCompare(b);
+        });
+
+        const accountContainer = document.getElementById('account-filters');
+        accountContainer.innerHTML = sortedOwners.map(owner => {
+          const displayOwner = owner === "Local Only" ? "僅本地專案 (Local Only)" : owner;
+          return `
+            <label class="checkbox-label">
+              <input type="checkbox" value="${owner}" checked>
+              <span class="custom-checkbox"></span>
+              <span class="owner-name-text">${displayOwner}</span>
+              <span class="count-badge">${ownerCounts[owner]}</span>
+            </label>
+          `;
+        }).join('');
+
+        // Bind events to the newly generated checkboxes
+        document.querySelectorAll('#account-filters input').forEach(cb => {
+          cb.addEventListener('change', filterAndRender);
+        });
+      }
+
+      // Populate language selector
+      function populateLanguages() {
+        const languages = new Set();
+        allRepos.forEach(r => {
+          if (r.language) languages.add(r.language);
+        });
+        
+        const selectLang = document.getElementById('select-language');
+        // Clear previous except default
+        selectLang.innerHTML = '<option value="all">全部語言</option>';
+        
+        Array.from(languages).sort().forEach(lang => {
+          const option = document.createElement('option');
+          option.value = lang;
+          option.textContent = lang;
+          selectLang.appendChild(option);
+        });
+      }
+
+      // Format date helper
+      function formatDate(dateStr) {
+        if (!dateStr) return '無資料';
+        const d = new Date(dateStr);
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+      }
+
+      // Relative time helper
+      function getRelativeTime(dateStr) {
+        if (!dateStr) return '無資料';
+        const date = new Date(dateStr);
+        const now = new Date();
+        const diffMs = now - date;
+        const diffSec = Math.floor(diffMs / 1000);
+        const diffMin = Math.floor(diffSec / 60);
+        const diffHour = Math.floor(diffMin / 60);
+        const diffDay = Math.floor(diffHour / 24);
+        
+        if (diffDay > 30) {
+          return formatDate(dateStr).split(' ')[0]; // Show just date
+        } else if (diffDay > 0) {
+          return `${diffDay} 天前`;
+        } else if (diffHour > 0) {
+          return `${diffHour} 小時前`;
+        } else if (diffMin > 0) {
+          return `${diffMin} 分鐘前`;
+        } else {
+          return '剛剛';
+        }
+      }
+
+      // Filter and render cards
+      function filterAndRender() {
+        const query = document.getElementById('search-input').value.toLowerCase().trim();
+        
+        // Get selected accounts
+        const selectedAccounts = [];
+        document.querySelectorAll('#account-filters input:checked').forEach(cb => {
+          selectedAccounts.push(cb.value);
+        });
+
+        const localStatus = document.getElementById('select-local-status').value;
+        const visibility = document.getElementById('select-visibility').value;
+        const language = document.getElementById('select-language').value;
+        const repoType = document.getElementById('select-type').value;
+        const showOnlyConnections = document.getElementById('toggle-connections').checked;
+        const sortBy = document.getElementById('select-sort').value;
+
+        // Apply filters
+        let filtered = allRepos.filter(repo => {
+          // Search Query matching name, description, language, or local path
+          const matchQuery = !query || 
+            repo.name.toLowerCase().includes(query) || 
+            repo.description.toLowerCase().includes(query) || 
+            (repo.language && repo.language.toLowerCase().includes(query)) ||
+            (repo.local_path && repo.local_path.toLowerCase().includes(query));
+          
+          // Account owner matching
+          const matchAccount = selectedAccounts.includes(repo.owner);
+          
+          // Local status matching
+          let matchLocalStatus = true;
+          if (localStatus === 'cloned') {
+            matchLocalStatus = repo.local_status === 'Cloned' || repo.local_status === 'External Cloned';
+          } else if (localStatus === 'remote_only') {
+            matchLocalStatus = repo.local_status === 'Remote Only';
+          } else if (localStatus === 'local_only') {
+            matchLocalStatus = repo.local_status === 'Local Git' || repo.local_status === 'Local Folder';
+          } else if (localStatus === 'local_git') {
+            matchLocalStatus = repo.local_status === 'Local Git';
+          } else if (localStatus === 'local_folder') {
+            matchLocalStatus = repo.local_status === 'Local Folder';
+          } else if (localStatus === 'external_cloned') {
+            matchLocalStatus = repo.local_status === 'External Cloned';
+          }
+          
+          // Visibility matching
+          const isPrivate = repo.visibility === 'PRIVATE' || repo.is_private === true;
+          const isLocal = repo.visibility === 'LOCAL_ONLY';
+          let matchVisibility = true;
+          if (visibility === 'public') {
+            matchVisibility = !isPrivate && !isLocal;
+          } else if (visibility === 'private') {
+            matchVisibility = isPrivate && !isLocal;
+          } else if (visibility === 'local_only') {
+            matchVisibility = isLocal;
+          }
+            
+          // Language matching
+          const matchLanguage = language === 'all' || repo.language === language;
+          
+          // Repo type matching (Original vs Fork)
+          const matchType = repoType === 'all' || 
+            (repoType === 'original' && !repo.is_fork) || 
+            (repoType === 'fork' && repo.is_fork);
+            
+          // Connections matching (does not apply to local only)
+          const matchConnections = !showOnlyConnections || (repo.owner !== 'Local Only' && repo.connection_count > 0);
+
+          return matchQuery && matchAccount && matchLocalStatus && matchVisibility && matchLanguage && matchType && matchConnections;
+        });
+
+        // Apply sorting
+        filtered.sort((a, b) => {
+          // Determine dates for comparison, fall back to creation date
+          const dateA = a.updated_at || a.created_at || "";
+          const dateB = b.updated_at || b.created_at || "";
+          const pushA = a.pushed_at || "";
+          const pushB = b.pushed_at || "";
+
+          if (sortBy === 'updated_at') {
+            return new Date(dateB) - new Date(dateA);
+          } else if (sortBy === 'pushed_at') {
+            if (!pushA) return 1;
+            if (!pushB) return -1;
+            return new Date(pushB) - new Date(pushA);
+          } else if (sortBy === 'created_at') {
+            return new Date(b.created_at || 0) - new Date(a.created_at || 0);
+          } else if (sortBy === 'name_asc') {
+            return a.name.localeCompare(b.name);
+          } else if (sortBy === 'name_desc') {
+            return b.name.localeCompare(a.name);
+          } else if (sortBy === 'stars') {
+            return (b.stars || 0) - (a.stars || 0);
+          } else if (sortBy === 'size') {
+            return (b.size_kb || 0) - (a.size_kb || 0);
+          }
+          return 0;
+        });
+
+        // Update counts in UI
+        document.getElementById('filtered-count').textContent = filtered.length;
+
+        // Render cards
+        const grid = document.getElementById('repo-grid');
+        if (filtered.length === 0) {
+          grid.innerHTML = `
+            <div class="empty-state">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="empty-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+              </svg>
+              <h3>沒有符合條件的項目</h3>
+              <p>請嘗試調整您的篩選條件或搜尋關鍵字。</p>
+            </div>
+          `;
+          return;
+        }
+
+        grid.innerHTML = filtered.map(repo => {
+          // Visibility badges
+          let visibilityBadge = '';
+          if (repo.visibility === 'PRIVATE') {
+            visibilityBadge = `<span class="badge badge-private">Private</span>`;
+          } else if (repo.visibility === 'LOCAL_ONLY') {
+            visibilityBadge = `<span class="badge badge-local-only">Local Only</span>`;
+          } else if (repo.visibility === 'EXTERNAL') {
+            visibilityBadge = `<span class="badge badge-external">External</span>`;
+          } else {
+            visibilityBadge = `<span class="badge badge-public">Public</span>`;
+          }
+            
+          // Owner badges
+          let ownerBadge = '';
+          if (repo.owner === 'Local Only') {
+            ownerBadge = `<span class="owner-badge owner-local-only">本地專案</span>`;
+          } else {
+            ownerBadge = `<span class="owner-badge owner-${repo.owner}">${repo.owner}</span>`;
+          }
+          
+          // Local status badges
+          let statusBadge = '';
+          if (repo.local_status === 'Cloned') {
+            statusBadge = `
+              <span class="status-badge status-cloned" title="已下載至本地端">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                已下載
+              </span>`;
+          } else if (repo.local_status === 'Local Git') {
+            statusBadge = `
+              <span class="status-badge status-local-git" title="僅在本地存在的 Git 專案">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg>
+                僅本地 (Git)
+              </span>`;
+          } else if (repo.local_status === 'Local Folder') {
+            statusBadge = `
+              <span class="status-badge status-local-folder" title="僅在本地存在的一般資料夾">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-19.5 0A2.25 2.25 0 004.5 15h15a2.25 2.25 0 002.25-2.25m-19.5 0v.158c0 .385.021.77.061 1.15l1.1 11.003c.199 1.98 1.867 3.497 3.86 3.497h10.458c1.993 0 3.662-1.517 3.86-3.497l1.1-11.002a7.48 7.48 0 00.062-1.15V12.75" /></svg>
+                僅本地 (資料夾)
+              </span>`;
+          } else if (repo.local_status === 'External Cloned') {
+            statusBadge = `
+              <span class="status-badge status-external" title="已下載的外部 GitHub 儲存庫">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" /></svg>
+                外部 Repo
+              </span>`;
+          } else {
+            statusBadge = `
+              <span class="status-badge status-remote-only" title="僅在 GitHub 雲端，本地未下載">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5h10.5a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0017.25 4.5H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z" /></svg>
+                僅雲端
+              </span>`;
+          }
+          
+          // Out of sync warning badges
+          let syncBadge = '';
+          if (repo.is_out_of_sync) {
+            if (repo.sync_status === 'local_newer') {
+              syncBadge = `
+                <span class="sync-badge sync-local-newer" title="本地端有較新的教材修改，尚未推送到 GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" /></svg>
+                  本地較新 (未上傳)
+                </span>`;
+            } else if (repo.sync_status === 'remote_newer') {
+              syncBadge = `
+                <span class="sync-badge sync-remote-newer" title="GitHub 雲端有較新的教材修改，本地端需要下拉更新 (git pull)">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" /></svg>
+                  雲端較新 (待更新)
+                </span>`;
+            }
+          }
+
+          // Size formatted
+          const sizeMB = (repo.size_kb / 1024).toFixed(2);
+          const sizeText = repo.size_kb > 1024 ? `${sizeMB} MB` : `${repo.size_kb} KB`;
+
+          // Language dot color mapping
+          let langDotColor = '#8b949e';
+          if (repo.language === 'JavaScript') langDotColor = '#f1e05a';
+          else if (repo.language === 'Python') langDotColor = '#3572A5';
+          else if (repo.language === 'HTML') langDotColor = '#e34c26';
+          else if (repo.language === 'CSS') langDotColor = '#563d7c';
+          else if (repo.language === 'TypeScript') langDotColor = '#3178c6';
+          else if (repo.language === 'Vue') langDotColor = '#41b883';
+          
+          const langBadge = repo.language 
+            ? `<div class="repo-lang"><span class="lang-dot" style="background-color: ${langDotColor}"></span>${repo.language}</div>` 
+            : '';
+
+          // Overlap links badge
+          let connectionBadge = '';
+          if (repo.owner !== 'Local Only' && repo.connection_count > 0) {
+            connectionBadge = `
+              <div class="connection-indicator" title="此專案也存在於其他帳號：${repo.connections.join(', ')}">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                </svg>
+                雲端重疊 (${repo.connections.join(', ')})
+              </div>
+            `;
+          }
+
+          // Path subtitle for local repos (handles multiple locations)
+          let localPathEl = '';
+          if (repo.local_paths && repo.local_paths.length > 0) {
+            const pathsList = repo.local_paths.map(p => {
+              return p.replace('/Users/force/Google_Antigravity/', '~/Google_Antigravity/')
+                      .replace('/Users/force/AI-CodeX/', '~/AI-CodeX/');
+            });
+            
+            if (pathsList.length > 1) {
+              localPathEl = `<div class="local-path-subtitle" title="${repo.local_paths.join('\n')}">📁 多個本地端 (${pathsList.length} 處)</div>`;
+            } else {
+              localPathEl = `<div class="local-path-subtitle" title="${repo.local_paths[0]}">${pathsList[0]}</div>`;
+            }
+          }
+
+          const desc = repo.description || '<span class="no-desc">尚無專案描述</span>';
+          
+          // Homepage/Demo URL button on card
+          let homepageEl = '';
+          if (repo.homepage_url) {
+            homepageEl = `
+              <a href="${repo.homepage_url}" target="_blank" class="repo-homepage-link" onclick="event.stopPropagation();" title="開啟教材網頁：${repo.homepage_url}">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-.91-8.017-2.469m16.034 0a11.97 11.97 0 01-3.213 6.942M3.983 8.031a11.97 11.97 0 003.213 6.942m0 0c2.25 2.227 5.289 3.528 8.625 3.528.163 0 .324-.002.484-.007" />
+                </svg>
+                開啟教材網頁 ↗
+              </a>
+            `;
+          }
+          
+          // Unique key for matching click
+          const clickKey = repo.owner === 'Local Only' ? repo.local_path : repo.full_name;
+
+          // Background styling class based on sync and upload status
+          let cardClass = 'repo-card';
+          if (repo.owner === 'Local Only') {
+            cardClass += ' card-local-only';
+          } else if (repo.is_out_of_sync) {
+            cardClass += ' card-out-of-sync';
+          }
+
+          return `
+            <article class="${cardClass}" data-clickkey="${clickKey}">
+              <div class="repo-card-header">
+                <div class="badge-row">
+                  ${ownerBadge}
+                  ${visibilityBadge}
+                  ${statusBadge}
+                  ${syncBadge}
+                </div>
+                <h3 class="repo-title" title="${repo.name}">${repo.name}</h3>
+                ${localPathEl}
+              </div>
+              <p class="repo-desc">${desc}</p>
+              ${connectionBadge}
+              ${homepageEl}
+              <div class="repo-card-meta">
+                ${langBadge}
+                <div class="meta-metrics">
+                  ${repo.owner !== 'Local Only' ? `
+                    <span class="metric" title="GitHub Stars">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.868 2.784a.75.75 0 00-1.736 0l-1.99 4.03-4.45.646a.75.75 0 00-.416 1.28l3.22 3.138-.76 4.433a.75.75 0 001.088.791L10 15.01l3.99 2.099a.75.75 0 001.088-.79l-.76-4.434 3.22-3.138a.75.75 0 00-.416-1.28l-4.45-.647-1.99-4.03z" />
+                      </svg>
+                      ${repo.stars}
+                    </span>
+                  ` : ''}
+                  <span class="metric" title="大小">${sizeText}</span>
+                </div>
+              </div>
+              <div class="repo-card-footer">
+                <span class="update-time">更新於 ${getRelativeTime(repo.updated_at || repo.created_at)}</span>
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        // Bind clicks on cards to open drawer
+        document.querySelectorAll('.repo-card').forEach(card => {
+          card.addEventListener('click', () => {
+            const clickkey = card.getAttribute('data-clickkey');
+            openDetailsDrawer(clickkey);
+          });
+        });
+      }
+
+      // Open detail drawer
+      function openDetailsDrawer(clickKey) {
+        // Find by full_name or local_path
+        const repo = allRepos.find(r => r.full_name === clickKey || r.local_path === clickKey);
+        if (!repo) return;
+
+        const drawer = document.getElementById('repo-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+        const body = document.getElementById('drawer-body');
+
+        // Check for same-named projects across accounts (excluding local only)
+        const connectedRepos = repo.owner !== 'Local Only' 
+          ? allRepos.filter(r => r.name === repo.name && r.owner !== repo.owner && r.owner !== 'Local Only')
+          : [];
+
+        let connectionsSection = '';
+        if (connectedRepos.length > 0) {
+          connectionsSection = `
+            <div class="detail-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="sec-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                </svg>
+                跨雲端帳號專案對照
+              </h4>
+              <p class="section-intro">此專案在其他雲端帳號也存在，比對資訊如下：</p>
+              <div class="connection-compare-grid">
+                <!-- Currently viewed repo -->
+                <div class="compare-card active">
+                  <div class="compare-header">
+                    <span class="compare-owner owner-${repo.owner}">${repo.owner} (目前檢視)</span>
+                    <span class="badge ${repo.visibility === 'PRIVATE' ? 'badge-private' : 'badge-public'}">${repo.visibility}</span>
+                  </div>
+                  <ul class="compare-meta-list">
+                    <li><strong>更新時間：</strong> ${formatDate(repo.updated_at)}</li>
+                    <li><strong>主語言：</strong> ${repo.language || '無'}</li>
+                    <li><strong>星數/Fork：</strong> ${repo.stars} ⭐ / ${repo.forks} 🍴</li>
+                    <li><strong>專案大小：</strong> ${repo.size_kb > 1024 ? (repo.size_kb/1024).toFixed(2) + ' MB' : repo.size_kb + ' KB'}</li>
+                    <li><strong>本地下載狀態：</strong> ${repo.is_cloned ? '已下載 (' + repo.local_status + ')' : '僅雲端'}</li>
+                    <li><strong>專案敘述：</strong> <p class="compare-desc">${repo.description || '無描述'}</p></li>
+                  </ul>
+                  ${repo.url ? `<a href="${repo.url}" target="_blank" class="compare-link">前往 GitHub ↗</a>` : ''}
+                </div>
+                <!-- Connected repos -->
+                ${connectedRepos.map(cr => `
+                  <div class="compare-card">
+                    <div class="compare-header">
+                      <span class="compare-owner owner-${cr.owner}">${cr.owner}</span>
+                      <span class="badge ${cr.visibility === 'PRIVATE' ? 'badge-private' : 'badge-public'}">${cr.visibility}</span>
+                    </div>
+                    <ul class="compare-meta-list">
+                      <li><strong>更新時間：</strong> ${formatDate(cr.updated_at)}</li>
+                      <li><strong>主語言：</strong> ${cr.language || '無'}</li>
+                      <li><strong>星數/Fork：</strong> ${cr.stars} ⭐ / ${cr.forks} 🍴</li>
+                      <li><strong>專案大小：</strong> ${cr.size_kb > 1024 ? (cr.size_kb/1024).toFixed(2) + ' MB' : cr.size_kb + ' KB'}</li>
+                      <li><strong>本地下載狀態：</strong> ${cr.is_cloned ? '已下載 (' + cr.local_status + ')' : '僅雲端'}</li>
+                      <li><strong>專案敘述：</strong> <p class="compare-desc">${cr.description || '無描述'}</p></li>
+                    </ul>
+                    <a href="${cr.url}" target="_blank" class="compare-link">前往 GitHub ↗</a>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        // Local path section (supports multiple locations)
+        let localPathSection = '';
+        if (repo.local_paths && repo.local_paths.length > 0) {
+          localPathSection = `
+            <div class="detail-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="sec-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-19.5 0A2.25 2.25 0 004.5 15h15a2.25 2.25 0 002.25-2.25m-19.5 0v.158c0 .385.021.77.061 1.15l1.1 11.003c.199 1.98 1.867 3.497 3.86 3.497h10.458c1.993 0 3.662-1.517 3.86-3.497l1.1-11.002a7.48 7.48 0 00.062-1.15V12.75" />
+                </svg>
+                本地工作區路徑 (${repo.local_paths.length} 處已下載)
+              </h4>
+              ${repo.local_paths.map((p, idx) => {
+                const sourceLabel = repo.local_sources[idx] || "未知來源";
+                return `
+                  <div class="local-path-wrapper" style="margin-top: 8px;">
+                    <span class="path-source-label">${sourceLabel}</span>
+                    <div class="local-path-box" style="margin-top: 4px;">
+                      <code>${p}</code>
+                      <button class="btn-copy" onclick="navigator.clipboard.writeText('${p.replace(/\\/g, '\\\\')}'); alert('路徑已複製到剪貼簿！');" title="複製路徑">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H5.25m1.5-1.5h1.5m.75-1.5h3.75m3 1.5h1.5m-.75-1.5h3.75m-3 1.5v13.5m-3-15h3m-3 3.75h3m-3 3.75h3m-3 3.75h3" /></svg>
+                      </button>
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          `;
+        }
+
+        // Visibility Text
+        let visibilityText = repo.visibility;
+        if (repo.visibility === 'PRIVATE') visibilityText = '私有儲存庫 (Private)';
+        else if (repo.visibility === 'PUBLIC') visibilityText = '公開儲存庫 (Public)';
+        else if (repo.visibility === 'LOCAL_ONLY') visibilityText = '僅本地端 (Local Only)';
+        else if (repo.visibility === 'EXTERNAL') visibilityText = '外部儲存庫 (External)';
+
+        // Size format
+        const sizeText = repo.size_kb > 1024 
+          ? `${(repo.size_kb / 1024).toFixed(2)} MB (${repo.size_kb} KB)` 
+          : `${repo.size_kb} KB`;
+
+        // Owner header badge styling
+        const ownerClass = repo.owner === 'Local Only' ? 'owner-local-only' : `owner-${repo.owner}`;
+        const displayOwner = repo.owner === 'Local Only' ? '僅本地 (未上傳)' : repo.owner;
+
+        body.innerHTML = `
+          <div class="detail-header">
+            <span class="owner-badge ${ownerClass}">${displayOwner}</span>
+            <span class="badge ${repo.visibility === 'PRIVATE' ? 'badge-private' : (repo.visibility === 'LOCAL_ONLY' ? 'badge-local-only' : 'badge-public')}">${repo.visibility}</span>
+            <h2 id="drawer-title">${repo.name}</h2>
+            <p class="detail-fullname">${repo.full_name}</p>
+          </div>
+          
+          <div class="detail-body">
+            <!-- Description -->
+            <div class="detail-section">
+              <h4>專案/儲存庫描述</h4>
+              <p class="detail-desc-text">${repo.description || '這個專案目前沒有提供描述內容。'}</p>
+            </div>
+
+            <!-- Local Path -->
+            ${localPathSection}
+
+            <!-- Metadata Grid -->
+            <div class="detail-section">
+              <h4>詳細中繼資料</h4>
+              <div class="metadata-grid">
+                <div class="meta-item">
+                  <span class="meta-label">建立日期</span>
+                  <span class="meta-val">${formatDate(repo.created_at)}</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">最後修改/更新日期</span>
+                  <span class="meta-val">${formatDate(repo.updated_at)}</span>
+                </div>
+                ${repo.pushed_at ? `
+                  <div class="meta-item">
+                    <span class="meta-label">雲端最後推送日期</span>
+                    <span class="meta-val">${formatDate(repo.pushed_at)}</span>
+                  </div>
+                ` : ''}
+                <div class="meta-item">
+                  <span class="meta-label">專案總大小</span>
+                  <span class="meta-val">${sizeText}</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">主要程式語言</span>
+                  <span class="meta-val">${repo.language || '偵測不到'}</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">權限與可見度</span>
+                  <span class="meta-val">${visibilityText}</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">本地狀態</span>
+                  <span class="meta-val">${repo.local_status}</span>
+                </div>
+                ${repo.owner !== 'Local Only' ? `
+                  <div class="meta-item">
+                    <span class="meta-label">是否為 Fork 分支</span>
+                    <span class="meta-val">${repo.is_fork ? '是 (' + (repo.parent_repo || '未知上游') + ')' : '否 (原創)'}</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">GitHub 星數</span>
+                    <span class="meta-val">${repo.stars} ⭐</span>
+                  </div>
+                ` : ''}
+              </div>
+            </div>
+
+            <!-- Connections section -->
+            ${connectionsSection}
+
+            <!-- External Links -->
+            ${repo.url || repo.homepage_url ? `
+              <div class="detail-section actions-section">
+                ${repo.homepage_url ? `
+                  <a href="${repo.homepage_url}" target="_blank" class="btn btn-primary btn-block text-center" style="margin-bottom: 10px; background: linear-gradient(135deg, var(--brand-teal) 0%, #0d9488 100%); border-color: #0d9488; box-shadow: 0 4px 14px rgba(20, 184, 166, 0.25);">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon" style="margin-right: 4px;">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-.91-8.017-2.469m16.034 0a11.97 11.97 0 01-3.213 6.942M3.983 8.031a11.97 11.97 0 003.213 6.942m0 0c2.25 2.227 5.289 3.528 8.625 3.528.163 0 .324-.002.484-.007" />
+                    </svg>
+                    開啟教材展示網頁 (Demo) ↗
+                  </a>
+                ` : ''}
+                ${repo.url ? `
+                  <a href="${repo.url}" target="_blank" class="btn btn-primary btn-block text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon" style="margin-right: 4px;">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                    在 GitHub 上開啟儲存庫 ↗
+                  </a>
+                ` : ''}
+              </div>
+            ` : ''}
+          </div>
+        `;
+
+        drawer.classList.add('open');
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden'; // Lock scroll
+      }
+
+      function closeDrawer() {
+        const drawer = document.getElementById('repo-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+        drawer.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.style.overflow = ''; // Unlock scroll
+      }
+
+      // Bind interaction events
+      function bindEvents() {
+        document.getElementById('search-input').addEventListener('input', filterAndRender);
+        document.getElementById('select-local-status').addEventListener('change', filterAndRender);
+        document.getElementById('select-visibility').addEventListener('change', filterAndRender);
+        document.getElementById('select-language').addEventListener('change', filterAndRender);
+        document.getElementById('select-type').addEventListener('change', filterAndRender);
+        document.getElementById('toggle-connections').addEventListener('change', filterAndRender);
+        document.getElementById('select-sort').addEventListener('change', filterAndRender);
+
+        // Reset Filters
+        document.getElementById('btn-reset-filters').addEventListener('click', () => {
+          document.getElementById('search-input').value = '';
+          document.getElementById('select-local-status').value = 'all';
+          document.querySelectorAll('#account-filters input').forEach(cb => cb.checked = true);
+          document.getElementById('select-visibility').value = 'all';
+          document.getElementById('select-language').value = 'all';
+          document.getElementById('select-type').value = 'all';
+          document.getElementById('toggle-connections').checked = false;
+          document.getElementById('select-sort').value = 'updated_at';
+          filterAndRender();
+        });
+
+        // Drawer closing
+        document.getElementById('btn-close-drawer').addEventListener('click', closeDrawer);
+        document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
+        
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') closeDrawer();
+        });
+
+        // Export CSV button click
+        document.getElementById('btn-export-csv').addEventListener('click', () => {
+          const link = document.createElement('a');
+          link.href = './repositories_report.csv';
+          link.download = 'repositories_report.csv';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
